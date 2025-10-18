@@ -1,0 +1,48 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+
+# Environment files (never commit secrets)
+.env
+app/.env
+app/.env.local
+*.pem
+*.key
+
+# Logs
+logs/
+*.log
+*.out
+*.err
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+docker-compose.local.yml
+docker-data/
+*.pid
+
+# CI / Build artifacts
+ci-artifacts/
+coverage/
+dist/
+build/
+
+# OS junk
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# GitHub / Actions
+# (workflow files stay, but temp SSH keys or outputs are excluded)
+*.tmp
+*.bak
+*.old
+deploy_key*
